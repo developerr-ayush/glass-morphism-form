@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <!-- css  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="inner-2"></div>
+        <div class="inner">
+            <form action="#">
+                <div class="row">
+                    <div class="col-12 text-center">
+
+                        <h2>Sustainable Rice Project form</h2>
+                    </div>
+
+                    <div class="col-12 my-3">
+                        <label for="date">Date</label>
+                        <input type="date" class="form-control" id="date">
+                    </div>
+
+                    <div class="col-12 my-3 checkbox-button">
+                        <h5>Railfall Tonight?</h5>
+                        <div>
+                            <input type="radio" id="nil" name="rainfall">
+                            <label for="nil">Nil</label>
+
+                        </div>
+                        <div>
+                            <input type="radio" id="light" name="rainfall">
+                            <label for="light">Light</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="Average" name="rainfall">
+                            <label for="Average">Average</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="Heavy" name="rainfall">
+                            <label for="Heavy">Heavy</label>
+                        </div>
+                    </div>
+
+                    <div class="col-12 my-3">
+                        <label for="water">Water pumped in Hours</label>
+                        <input type="text" id="water" class="form-control">
+                    </div>
+                   
+
+                    <div class="col-12 my-3 checkbox-button">
+                        <h5>Is the field waterlogged/stagnant today after rain/pumping?</h5>
+                        <div>
+                            <input type="radio" id="yes" name="waterlog">
+                            <label for="yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="no" name="waterlog">
+                            <label for="no">No</label>
+                        </div>
+                    </div>
+                    <div class="col-12 my-3 checkbox-button">
+                        <h5>Water regime on the field</h5>
+                        <div>
+                            <input type="radio" id="dry" name="regime">
+                            <label for="dry">Dry</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="Moist" name="regime">
+                            <label for="Moist">Moist</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="Flodded" name="regime">
+                            <label for="Flodded">Flodded</label>
+                        </div>
+                    </div>
+
+                    <div class="col-12 my-3 checkbox checkbox-button">
+                        <h5>Farm operations performed </h5>
+                        <div>
+                            <input type="checkbox" name="farmoper" id="ploughing">
+                            <label for="ploughing">Ploughing</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="farmoper" id="LaserLeveling">
+                            <label for="LaserLeveling">Laser Leveling</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="farmoper" id="Harrowing">
+                            <label for="Harrowing">Harrowing</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="farmoper" id="Puddling">
+                            <label for="Puddling">Puddling</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="farmoper" id="Leveling">
+                            <label for="Leveling">Leveling</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="farmoper" id="Harvesting">
+                            <label for="Harvesting">Harvesting</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="farmoper" id="Post-Harvesting">
+                            <label for="Post-Harvesting">Post-Harvesting</label>
+                        </div>
+                        <br>
+                        
+                    </div>
+                    <div class="col-12">
+                        
+                        <div>
+                            <label for="other">Other, please specify</label>
+                            <input type="text" name="farmoper" id="other" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+
+                    <div class="col-12 my-3">
+                        <h5>
+                            Name of farm operation
+                        </h5>
+                    </div>
+                    <div class="col-12 my-3">
+                        <label for="farm-oper">Name of farm operation</label>
+                        <input type="text" class="form-control" id="farm-oper">
+                    </div>
+
+
+
+
+
+                    <div class="col-12 my-3">
+                        <h5>Labour details</h5>
+                    </div>
+
+                    <div class="col-12 my-3">
+                        <label for="labour-male">No. of Males</label>
+                        <input type="text" class="form-control" id="labour-male">
+                    </div>
+                    <div class="col-12 my-3">
+                        <label for="labour-female">No. of Females</label>
+                        <input type="text" class="form-control" id="labour-female">
+                    </div>
+
+
+                    <div class="col-12 my-3">
+                        <h5>Machine Details</h5>
+                    </div>
+
+                    <div class="col-12 my-3">
+                        <label for="type-machine">Type of Machine used</label>
+                        <input type="text" class="form-control" id="type-machine">
+                    </div>
+
+                    <div class="col-12 my-3">
+                        <label for="name-machine">Name of the Machine</label>
+                        <input type="text" class="form-control" id="name-machine">
+                    </div>
+
+                    <div class="col-12 my-3">
+                        <label for="make-machine">Make of Machine</label>
+                        <input type="text" class="form-control" id="make-machine">
+                    </div>
+
+                    <div class="col-12 my-3">
+                        <label for="number-hrs">Number of hour machine used</label>
+                        <input type="text" class="form-control" id="number-hrs">
+                    </div>
+
+                    <div class="col-12 my-3">
+                        <label for="fuel-consum">Fuel consumption in litre/hour</label>
+                        <input type="text" class="form-control" id="fuel-consum">
+                    </div>
+
+
+
+                </div>
+
+                <button type="button" class="btn btn-danger custom-button">Add More Farm Operation</button>
+                <hr>
+              
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Farm input (Fertilizers, insecticides, compost, manure, weedicide, pesticides etc.,)Please specify</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 my-3 checkbox-button">
+                        <h5>Sprayer Type</h5>
+                        <div>
+
+                            <input type="radio" name="sprayer-type" id="battery">
+                            <label for="battery">Battery Operated</label>
+                        </div>
+                        <div>
+
+                            <input type="radio" name="sprayer-type" id="mannual">
+                            <label for="mannual">Manually Operated</label>
+                        </div>
+                    </div>
+                    <div class="col-12 my-3">
+                        <label for="spray-brand">Sprayer Brand</label>
+                        <input type="text" id="spray-brand" class="form-control">
+                    </div>
+                    <div class="col-12 my-3">
+                        <label for="spray-tank">Sprayer Tank Capacity</label>
+                        <input type="text" id="spray-tank" class="form-control">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-12 my-3">
+                        <label for="inp-type">Input Type</label>
+                        <input type="text" class="form-control" id="inp-type">
+                    </div>
+                    <div class="col-12 my-3">
+                        <label for="inp-name">Input Name/Brand</label>
+                        <input type="text" class="form-control" id="inp-name">
+                    </div>
+                    <div class="col-12 my-3">
+                        <label for="inp-quant">Quantity in Kgs/Liters</label>
+                        <input type="text" class="form-control" id="inp-quant">
+                    </div>
+                    <div class="col-12 my-3">
+                        <h5>Labour Details</h5>
+                    </div>
+                    <div class="col-12 my-3">
+                        <label for="no-male">No Of Males</label>
+                        <input type="text" class="form-control" id="no-male">
+                    </div>
+                    <div class="col-12 my-3">
+                        <label for="no-female">No Of Females</label>
+                        <input type="text" class="form-control" id="no-female">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-danger custom-button">Add More Farm Input</button>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

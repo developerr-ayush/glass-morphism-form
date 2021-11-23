@@ -1,0 +1,211 @@
+.wrapper {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+.wrapper::before {
+    content: "";
+    width: 1250px;
+    height: 1250px;
+    border-radius: 100%;
+    background: rgb(195, 34, 34);
+    background: linear-gradient(0deg, rgba(195, 34, 34, 1) 0%, rgba(234, 253, 45, 1) 77%);
+    position: absolute;
+    left: -50%;
+    top: -70%;
+}
+
+.wrapper::after {
+    content: "";
+    width: 1250px;
+    height: 1250px;
+    border-radius: 100%;
+    background: rgb(0, 255, 244);
+    background: linear-gradient(273deg, rgba(0, 255, 244, 1) 28%, rgba(244, 250, 0, 1) 91%);
+    position: absolute;
+    bottom: -90%;
+    z-index: 1;
+    right: -50%;
+}
+
+hr {
+    background-color: #fff;
+    height: 3px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.form-control {
+    width: 100%;
+}
+
+::selection {
+    /* background: blue; */
+    color: #fff;
+    background: #0400ff;
+
+}
+
+.inner {
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: #fff;
+    margin-bottom: 100px;
+    height: 80vh;
+    overflow: auto;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+    position: relative;
+    z-index: 4;
+}
+
+.inner::-webkit-scrollbar {
+    width: 10px;
+    /* background: rgba( 255, 255, 255, 0.5 ); */
+}
+
+.inner::-webkit-scrollbar-track {
+    /* background: rgba( 255, 255, 255, 0.5 ); */
+
+}
+
+.inner::-webkit-scrollbar-thumb {
+    /* background: rgba(107, 107, 107, 0.815); */
+    background-color: #fff;
+}
+
+.inner-2::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background: rgb(0, 9, 255);
+    background: linear-gradient(90deg, rgba(0, 9, 255, 1) 0%, rgba(252, 0, 255, 1) 100%);
+    position: absolute;
+    border-radius: 100%;
+    top: 6%;
+    right: 24%;
+}
+
+.inner-2::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background: rgb(112, 255, 0);
+    background: linear-gradient(90deg, rgba(112, 255, 0, 1) 0%, rgba(255, 0, 0, 1) 100%);
+    position: absolute;
+    border-radius: 100%;
+    left: 24%;
+    bottom: -4%;
+}
+
+.inner input {
+    background: rgba(255, 255, 255, 0.0);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.inner input:focus,
+.inner input:focus-visible {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.inner input[type="radio"],
+.inner input[type="radio"]:focus,
+.inner input[type="checkbox"],
+.inner input[type="checkbox"]:focus {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    backdrop-filter: none;
+    filter: hue-rotate(270deg);
+    outline: none;
+
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.custom-button {
+    /* background: rgb(141,0,255); */
+    background: linear-gradient(90deg, rgba(141, 0, 255, 1) 0%, rgba(255, 0, 0, 1) 100%);
+    border: 0;
+    transition: .5s;
+}
+
+.custom-button:hover,
+.custom-button:focus,
+.custom-button:active {
+    border: 0;
+    box-shadow: none !important;
+    /* background: rgb(141,0,255); */
+    background: linear-gradient(240deg, rgba(141, 0, 255, 1) 0%, rgba(255, 0, 0, 1) 100%);
+}
+
+
+.checkbox-button label {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: inline-block;
+    padding: 10px;
+    min-width: 100px;
+    border-radius:30px;
+    margin-top: 10px;
+}
+
+.checkbox-button input[type="radio"],
+.checkbox-button input[type="checkbox"]
+{
+    display: none;
+}
+.checkbox-button > div{
+    display: inline-block;
+    margin-right: 5px;
+}
+.checkbox-button label{
+
+    cursor: pointer;
+    text-align: center;
+}
+.checkbox-button input:checked ~ label{
+    background: linear-gradient(90deg, rgba(141, 0, 255, 1) 0%, rgba(255, 0, 0, 1) 100%);
+} 
